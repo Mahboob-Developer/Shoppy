@@ -1,0 +1,245 @@
+.btnDanger {
+    background-color: transparent ;
+    color: #131d41 !important;
+    border: 2px solid #131d41;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btnDanger:hover {
+    background-color: #131d41;
+    color: white !important;
+    border: 2px solid #131d41;
+}
+
+.btnPrimary {
+    background-color: #131d41 ;
+    color: white !important;
+    border: 2px solid #131d41;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btnPrimary:hover {
+    background-color: transparent;
+    color: #131d41 !important;
+    border: 2px solid #131d41;
+}
+input[type="text"]:focus,input[type="submit"]:focus {
+    outline: none;             /* Remove the outline */
+    box-shadow: none;          /* Remove the box shadow */
+    border: 2px solid #e7e5e5;     /* Keep the original border color */
+}
+
+
+
+/* this is user for table responsive */
+.table {
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden;    /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis if text is too long */
+}
+.disabled {
+        pointer-events: none;
+        opacity: 0.65;
+    }
+
+/* this is use for image for table responsive */
+@media (max-width: 576px) {
+    .ResponsibeImage {
+        width: 10vw;
+        height: 4vh;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .ResponsibeImage {
+        width: 4vw;
+        height: 4vh;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .ResponsibeImage {
+        width: 4vw;
+        height: 4vh;
+    }
+}
+@media (min-width: 993px) {
+    .ResponsibeImage {
+        width: 4vw;
+        height: 6vh;
+    }
+}
+
+
+
+/* for allproduct page  */
+ .review_image {
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+        }
+        .main {
+            background-color: #f8f9fa;
+        }
+        .main2 {
+            background-color: #ffffff;
+        }
+        .home_image {
+            height: 20vh;
+            width: 100%;
+        }
+        @media screen and (min-width: 770px) {
+            .loginadmin{
+                height: 60vh;
+            }
+            .main_shoes a img {
+                height: 75vh;
+                width: 100%
+            }
+            .side_shoes img {
+                height: 15vh;
+            }
+            .review_image {
+                width: 3vw;
+                height: 5vh;
+            }
+            .mainImageForProduct{
+                height: 80vh;
+            }
+        }
+        @media screen and (max-width: 770px) {
+             .loginadmin{
+                height: 40vh;
+            }
+            .main_shoes img {
+                height: 53.8vh;
+            }
+            .side_shoes img {
+                height: 10vh;
+            }
+            .review_image {
+                width: 8vw;
+                height: 5vh;
+            }
+            .mainImageForProduct{
+                height: 100vh;
+            }
+        }
+        
+        .carousel-inner {
+            padding: 1em;
+        }
+        .carousel-control-prev,
+    .carousel-control-next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 5vw; /* Ensure the icon fills the button area */
+        height: 5vh; /* Ensure the icon fills the button area */
+    }
+        .formate {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+/* //for home page */
+         .hover-effect img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .hover-effect img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+        
+    .imga img {
+      height:25vh;
+      max-width: 100%;
+    }
+
+    .product-info {
+      margin-top: 0.5rem;
+    }
+    .product-price {
+      display: block;
+      margin: 0;
+    }
+
+    .product-price {
+      font-weight: bold;
+      color: #2C3E50;
+    }
+    @media (min-width: 768px) {
+        .cardImage{
+            width: 15vw;
+        }
+        .cardImage img{
+            height: 30vh;
+            width: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .cardImage img:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+        .carousel-inner img {
+            height: 50vh;
+            width: 100%;
+        }
+    }
+    @media (max-width: 768px) {
+        .cardImage{
+            width: 35vw;
+        }
+        .cardImage img{
+            height: 10vh;
+            width: 100%;
+            object-fit: contain;
+        }
+        .imagesforall{
+            background-color: #131d41;
+        }
+        .carousel-inner img {
+            height: 25vh;
+            width: 100%;
+        }
+       
+    }
+
+
+    /* for conform buy page  */
+     @media (max-width: 768px) and (min-width: 500px) {
+            .deliver {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 500px) and (min-width: 300px) {
+            .deliver {
+                font-size: 12px;
+            }
+        }
+
+        /* for footer contact button  */
+        @media  (min-width: 768px){
+            .contactbtn{
+            height: 6vh;            }
+        }
+        
+        

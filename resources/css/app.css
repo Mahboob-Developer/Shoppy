@@ -1,0 +1,19 @@
+.btnColor{
+    background-color: transparent;
+    color: 1a2035;
+    border:2px solid #242f58;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+.btnColor:hover{
+background-color:#1a2035;
+color: white;
+border:2px solid
+}

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fff;
+    min-width: 0;
+}
+
+#sidebar {
+    width: 70px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #0e2238;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+
+#sidebar.expand .sidebar-logo,
+#sidebar.expand a.sidebar-link span {
+    animation: fadeIn .25s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i,
+.dropdown-item i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #3b7ddd;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.navbar {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+}
+
+.navbar-expand .navbar-collapse {
+    min-width: 200px;
+}
+
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+@media (min-width: 768px) {}
+/* this is used for order image  */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container */
+}
+/* use and guest  */
+.hover-effect img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hover-effect img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+/* .imga{
+    height: 40%;
+} */
+.imga {
+text-align: center;
+}
+
+.imga img {
+height:25vh;
+max-width: 100%;
+}
+
+.product-info {
+margin-top: 0.5rem;
+}
+
+
+.product-price {
+display: block;
+margin: 0;
+}
+
+.product-price {
+font-weight: bold;
+color: #2C3E50;
+}
+
+
+/* Allproduct  css  */
+.review_image {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+.main {
+    background-color: #f8f9fa;
+}
+.main2 {
+    background-color: #ffffff;
+}
+
+:root {
+    --background-color: #7c4dff;
+    --footer-backgroundcolor: rgb(33, 37, 72, 1);
+}
+.home_image {
+    height: 20vh;
+    width: 100%;
+}
+@media screen and (min-width: 770px) {
+    .main_shoes a img {
+        height: 65vh;
+    }
+    .side_shoes img {
+        height: 15vh;
+    }
+    .review_image {
+        width: 3vw;
+        height: 5vh;
+    }
+    .imagesforall{
+        width: 4vw;
+    }
+}
+@media screen and (max-width: 770px) {
+    .main_shoes img {
+        height: 45vh;
+    }
+    .side_shoes img {
+        height: 10vh;
+    }
+    .review_image {
+        width: 8vw;
+        height: 5vh;
+    }
+}
+.carousel-inner img {
+    height: 25vh;
+    width: 100%;
+}
+.carousel-inner {
+    padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    transform: translateY(500%);
+}
+.carousel-control-prev {
+    margin-left: -1.5%;
+}
+.carousel-control-next {
+    margin-right: -1.5%;
+}
+.formate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
